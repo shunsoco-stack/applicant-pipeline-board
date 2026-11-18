@@ -1,0 +1,63 @@
+/* A4縦・面接評価1枚 */
+@page {
+  size: A4 portrait;
+  margin: 13mm;
+}
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 11px;
+  }
+  .no-print,
+  .sidebar,
+  .mobile-nav,
+  footer,
+  .topbar,
+  .notice {
+    display: none !important;
+  }
+  .workspace {
+    width: 100%;
+    margin: 0;
+  }
+  main {
+    padding: 0;
+    max-width: none;
+  }
+  .score-sheet {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    break-inside: avoid;
+  }
+  .score-sheet h2 {
+    margin-bottom: 8px;
+  }
+  .score-sheet input,
+  .score-sheet select,
+  .score-sheet textarea {
+    color: black;
+    background: white;
+    border: 1px solid #bbb;
+  }
+  .score-sheet label {
+    margin-bottom: 10px;
+  }
+  .rating-field {
+    padding-bottom: 6px;
+    margin-bottom: 5px;
+  }
+  .rating-field label {
+    min-height: 30px;
+  }
+  .sheet-top {
+    margin-bottom: 15px;
+  }
+  textarea {
+    resize: none;
+    height: 70px;
+  }
+}

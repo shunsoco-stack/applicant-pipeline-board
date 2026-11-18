@@ -1,0 +1,9 @@
+/* 画面・用途別のスタイル */
+@import "../styles/base.css";
+@import "../styles/shell.css";
+@import "../styles/board.css";
+@import "../styles/forms.css";
+@import "../styles/scorecard.css";
+@import "../styles/insights.css";
+@import "../styles/responsive.css";
+@import "../styles/print.css";

@@ -1,0 +1,85 @@
+/* 面接評価シート */
+.score-sheet {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 36px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  border-radius: 7px;
+}
+.sheet-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #7d8a76;
+  margin-bottom: 22px;
+  letter-spacing: 0.05em;
+}
+.rating-field {
+  border: 0;
+  padding: 8px 0 14px;
+  margin: 0 0 10px;
+  border-bottom: 1px solid var(--line);
+}
+.rating-field legend {
+  font-weight: 600;
+  font-size: 13px;
+}
+.rating-field > div {
+  display: flex;
+  gap: 15px;
+}
+.rating-field label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  min-height: 44px;
+  min-width: 65px;
+}
+.rating-field input {
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  accent-color: var(--navy);
+}
+.evaluation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.evaluation {
+  border: 1px solid var(--line);
+  padding: 22px;
+  border-radius: 6px;
+}
+.evaluation h3 small {
+  display: block;
+  margin-top: 4px;
+  color: #7f8a77;
+}
+.evaluation p {
+  font-size: 12px;
+  margin-top: 18px;
+}
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.score-row small {
+  font-size: 10px;
+}
+.split-score {
+  color: var(--rust);
+  background: #fcf1e9;
+  padding: 12px 8px;
+}
+.split-score span small {
+  display: block;
+}
